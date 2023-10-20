@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Kumbh+Sans:wght@400;700&family=Noto+Serif+Khojki:wght@400;500&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@400;500;700&family=Roboto:ital,wght@0,300;0,500;1,300;1,400&family=Rubik&family=Secular+One&display=swap');
+
+body {
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 45vw bottom 50vh, left 50vw top 50vh;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 420px;
+    width: 350px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card .profile-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.card .profile-information img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-top: -55px;
+}
+
+.container .card .img-profile {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.card .profile-numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.card .profile-information .name,
+.card .profile-information .age,
+.card .profile-numbers .counter {
+    font-weight: 700;
+}
+
+.card .profile-information .age,
+.card .profile-information .city,
+.card .profile-numbers .counter-type, hr {
+    color: var(--dark-gray);
+}
